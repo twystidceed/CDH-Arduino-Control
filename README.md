@@ -3,6 +3,7 @@ Auto Start/Stop for Chinese Diesel Heaters - See Readme
 
 Works with Most Atmega Arduino chipsets.
 this will only work with 3 wire diesel heater control setups. Will not work with heaters that have the basic control board and rotary dials. Use at own risk 
+This controller only works with the same digital control units as the Afterburner by Ray Jones . you can see compatability list here https://gitlab.com/mrjones.id.au/bluetoothheater/-/wikis/home#compatibility
 
 Create a splice into the data wire, light blue usually on compatable heaters and another into the black (ground) wire. Some heaters allow you to also splice into the red (5v) to power the arduino, but this does not work with all so a separate 5v usb power source may be needed . 
 
