@@ -1,5 +1,5 @@
 # CDH-Arduino-Control
-Auto Start/Stop for Chinese Diesel Heaters - See Readme
+Basic Auto Start/Stop for Chinese Diesel Heaters
 
 
 Works with Most Atmega Arduino chipsets.
