@@ -4,6 +4,9 @@ Basic Auto Start/Stop for Chinese Diesel Heaters
 
 Works with Most Atmega Arduino chipsets.
 
+You will need to add the library included to your arduino . This can be done in seconds with the Arduino IDE - once you unzip the downloaded code file. you will find the half duplex library is included . 
+
+
 This code Requires you to maintain a connection and use the factory supplied display and control. DO NOT CUT THE CONNECTOR - only splice into the wire. 
 
 This controller only works with the same 3 wire diesel heater digital control units as the Afterburner by Ray Jones . you can see compatability list here https://gitlab.com/mrjones.id.au/bluetoothheater/-/wikis/home#compatibility
