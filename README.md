@@ -32,3 +32,11 @@ There is still a random bug that every now and then causes the arduino to ignore
 I highly suggest properly tuning your htz and rpm settings prior to using this . There are many resources available for this . 
 
 
+2023 update:
+
+The cold weather is back and so I am back at it! i have deciphered 99% of the bits contained in the data stream.. 
+
+For those who dont know, most of these cheap chinese diesel heaters use 3 wires to the controller with a single wire for bi-directional communications (blue wire) between the controller and the heater motherboard.. while you can extract a total of 48 bits of data, the first 24 are the programming and control bits used to send commands to the heater and adjust the heater settings..  25 to 47 are not of any actual use to the average user. With the exception of Bit 29(Voltage) and bit 41 (error code), they are simply values being gathered from the multiple sensors that the motherboard uses to control and monitor the heater performance. others are simply passive bits just being monitored by the controller to change the on screen icons such as the indicators for pump, glow plug and temp but nothing more.. utilising an oled screen i have been able to actually monitor in real time,  case temps, fan rpm, glow plug voltage, room temp, heater status and error codes, etc using these bits.. so for advanced users... 
+
+my next sketch push (hopefully in the next week or so ) will have a large portion at the end commented out. anyone can un-comment the serial.print lines to see ALL of the data in the serial monitor in real time. Great for troubleshooting a shoddy running heater or one that keeps posting error codes.. 
+
